@@ -1,61 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 html {
     box-sizing: border-box;
 }
-*,*::after,*::before {
+
+*,
+*::after,
+*::before {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #333D51;
+    /* background-color: ; */
+    /* color: aliceblue; */
+
+}
+header {
+    background-color: rgb(20, 20, 50);
+}
+.game-title {
+    font-size: 2.3em;
+    text-align: center;
+    color: aliceblue;
+    padding: 22px;
 }
 .container {
-    margin-top: 3em;
+   display: grid;
+   place-items: center;
 }
-.gameTitle {
-    font-size: 50px;
-    margin-bottom: 3rem;
-    text-align: center;
-    color: #CBD0D8;
-}
-.buttons {
-    display: flex;
-    gap: 1.5em;
-}
-.buttons > button{
-    padding: 20px;
-    font-size: 5em;
-}
-.vs {
-    display: flex;
-    align-items: center;
+.container-title {
+    margin-top: 25px;
+    font-size: 1.8em;
+    font-weight: 500;
 }
 .scores {
     display: flex;
+    gap: 4em;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+.scores > div > p{
+    font-size: 4em;
+    font-weight: 400;
+}
+.scores > div > span {
+    font-size: 1.3em;
+}
+.win {
+    margin-bottom: 2rem;
+}
+.win > p {
+    font-size: 2em;
+}
+.result > p {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+}
+.weapons .btn{
+    padding: 1.5rem;
+    margin: 0 .5rem;
+    font-size: 5em;
+    border: 0;
+    cursor: pointer;
+}
+.copy {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+.footer-text {
+    display: flex;
+    align-items: center;
+    gap: .5em;
     justify-content: center;
-    gap: 2em;
-    font-size: 30px;
-    margin-bottom: 1em;
-    text-align: center;
-    color: #F4F3EA;
 }
-.scores > div .block {
-    display: block;
+.github-img {
+    width: 30px;
+    transition: transform 0.3s ease-out;
 }
-.result > p,
-.win > p {
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 1em;
-    color: #F4F3EA;
-}
-.win > p {
-    margin-bottom: 1.5em;
+.github-img:hover {
+    transform: rotate(360deg);
 }
