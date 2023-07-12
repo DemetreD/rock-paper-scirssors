@@ -3,12 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
     <title>Document</title>
 </head>
 <body>
     
+    <header>
+        <h1 class="game-title">Rock Paper Scissors</h1>
+    </header>
+
+    <main class="container">
+
+        <h2 class="container-title">Choose your weapon</h2>
+
+        <div class="scores">
+            <div>
+                <p id="playerRunningScore">0</p>
+                <span class="player1">Player</span>
+            </div>
+            <div>
+                <p id="computerRunningScore">0</p>
+                <span class="player2">Computer</span>
+            </div>
+        </div>
+
+
+        <div class="result">
+            <p id="results"></p>
+        </div>
+        <div class="win">
+            <p id="winner"></p>
+        </div>
+
+        <div class="weapons">
+            <button id="button1" class="btn">🪨</button>
+            <button id="button2" class="btn">✋</button>
+            <button id="button3" class="btn">✌️</button>
+        </div>
+    </main>
+
+    <footer class="copy">
+        <div>
+            <p class="footer-text">Copyright&copy; 2023 DemetreD<a href="https://github.com/DemetreD" target="_blank"><img src="./25231.png" class="github-img"></a></p>
+        </div>
+    </footer>
 
     <script src="./index.js"></script>
-
 </body>
 </html>
