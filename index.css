@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500;600;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+*,*::after,*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333D51;
+}
+.container {
+    margin-top: 3em;
+}
+.gameTitle {
+    font-size: 50px;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #CBD0D8;
+}
+.buttons {
+    display: flex;
+    gap: 1.5em;
+}
+.buttons > button{
+    padding: 20px;
+    font-size: 5em;
+}
+.vs {
+    display: flex;
+    align-items: center;
+}
+.scores {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-size: 30px;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #F4F3EA;
+}
+.scores > div .block {
+    display: block;
+}
+.result > p,
+.win > p {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #F4F3EA;
+}
+.win > p {
+    margin-bottom: 1.5em;
+}
